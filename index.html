@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp Chúc Mừng Năm Mới</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+    .card {
+      display: none;
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #efd3e9;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.5s ease forwards;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    h1 {
+      color: #030303;
+      font-size: 24px;
+    }
+    p {
+      color: #0b0b0b;
+      font-size: 16px;
+    }
+    .love {
+      color: red;
+      font-size: 20px;
+    }
+    img {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+    .firework {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      background: url('https://giupban.com.vn/wp-content/uploads/2019/09/hinh-nen-phao-hoa-chuyen-dong-13.gif') repeat center center;
+      animation: firework 10s linear infinite;
+    }
+    @keyframes firework {
+      from {
+        background-size: 96% auto;
+      }
+      to {
+        background-size: 96% auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="firework"></div>
+  <button onclick="showCard()">Ấn vô đây nè </button>
+  <div class="card" id="card">
+    <h1>Chúc Mừng Năm Mới!</h1>
+    <p>Chúc mừng năm mới vợ yêu nhéeee!</p>
+    <p>Anh chúc em năm mới vui vẻ hạnh phúc khỏe mạnh và lun xinh đẹp nhaaaa</p>
+    <p>Anh yêu em nhìu lémmm và sẽ mãi là như vậy ehhehehehe</p>
+
+    <img src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/346305346_286781203699202_6695965048431097488_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeHa9qL2-9Fz3rkefP1kbVpIHybV2-mAWTsfJtXb6YBZO9OGy9zhsZW9sTC9YiHojdV2FRScjIo_2JAPBb2YTNzs&_nc_ohc=sTRaiP4W9ucAX_I7Thw&_nc_ht=scontent.fhan3-2.fna&oh=00_AfAaNdyyZoed6TxeBqO7dS4tfFHiDDciOEy1GQXB6uWVPQ&oe=65CB89DF" alt="Ảnh của bạn và người yêu">
+  </div>
+
+  <script>
+    function showCard() {
+      var card = document.getElementById("card");
+      card.style.display = "block";
+    }
+  </script>
+</body>
+</html>
